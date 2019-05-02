@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.RegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/fragmentContainer">
+
+        <ImageView
+            android:layout_width="222dp"
+            android:layout_height="217dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo"
+            android:id="@+id/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="30dp"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textColor="#FF09496D"
+            android:id="@+id/register"/>
+
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter your Full Name"
+            android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registerName"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter your Email"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Password"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/registerEmail"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/registerConfirmPassword"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:hint="Confirm your Password"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/registerPassword"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:background="#09496D"
+            android:text="Register"
+            android:textColor="#D4DDE8"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/registerConfirmPassword"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+</FrameLayout>
