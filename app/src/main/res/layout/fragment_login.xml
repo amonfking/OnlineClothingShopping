@@ -32,21 +32,21 @@
             android:id="@+id/register"/>
 
         <EditText
-            android:id="@+id/loginEmail"
+            android:id="@+id/etLoginEmail"
             android:layout_width="299dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/register"
             android:layout_centerHorizontal="true"
-            android:hint="Enter Username"
+            android:hint="Enter Email"
             android:layout_marginTop="40dp"/>
 
         <EditText
-            android:id="@+id/loginPassword"
+            android:id="@+id/etLoginPassword"
             android:layout_width="299dp"
             android:layout_height="wrap_content"
             android:hint="Enter your Password"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/loginEmail"
+            android:layout_below="@+id/etLoginEmail"
             android:layout_marginTop="20dp"/>
 
         <Button
@@ -57,7 +57,7 @@
             android:text="Login"
             android:textColor="#D4DDE8"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/loginPassword"
+            android:layout_below="@+id/etLoginPassword"
             android:layout_marginTop="20dp"/>
 
     </RelativeLayout>

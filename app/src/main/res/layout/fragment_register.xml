@@ -5,77 +5,89 @@
     tools:context="fragments.RegisterFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/fragmentContainer">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-        <ImageView
-            android:layout_width="222dp"
-            android:layout_height="217dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:src="@drawable/logo"
-            android:id="@+id/logo"/>
-
-        <TextView
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register"
-            android:textSize="30dp"
-            android:layout_below="@+id/logo"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:textColor="#FF09496D"
-            android:id="@+id/register"/>
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
 
-        <EditText
-            android:id="@+id/registerName"
-            android:layout_width="299dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/register"
-            android:layout_centerHorizontal="true"
-            android:hint="Enter your Full Name"
-            android:layout_marginTop="40dp"/>
 
-        <EditText
-            android:id="@+id/registerEmail"
-            android:layout_width="299dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/registerName"
-            android:layout_centerHorizontal="true"
-            android:hint="Enter your Email"
-            android:layout_marginTop="20dp"/>
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="222dp"
+                android:layout_height="217dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo" />
 
-        <EditText
-            android:id="@+id/registerPassword"
-            android:layout_width="299dp"
-            android:layout_height="wrap_content"
-            android:hint="Enter your Password"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/registerEmail"
-            android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Register"
+                android:textColor="#FF09496D"
+                android:textSize="30dp" />
 
-        <EditText
-            android:id="@+id/registerConfirmPassword"
-            android:layout_width="299dp"
-            android:layout_height="wrap_content"
-            android:hint="Confirm your Password"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/registerPassword"
-            android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/etRegisterName"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:hint="Enter your Full Name" />
 
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="299dp"
-            android:layout_height="wrap_content"
-            android:background="#09496D"
-            android:text="Register"
-            android:textColor="#D4DDE8"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/registerConfirmPassword"
-            android:layout_marginTop="20dp"/>
-    </RelativeLayout>
+            <EditText
+                android:id="@+id/etRegisterEmail"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegisterName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Enter your Email" />
+
+            <EditText
+                android:id="@+id/etRegisterPassword"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegisterEmail"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp"
+                android:hint="Enter your Password" />
+
+            <EditText
+                android:id="@+id/etRegisterConfirmPassword"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegisterPassword"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp"
+                android:hint="Confirm your Password" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegisterConfirmPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#09496D"
+                android:text="Register"
+                android:textColor="#D4DDE8" />
+
+        </RelativeLayout>
+    </ScrollView>
+
 
 </FrameLayout>
