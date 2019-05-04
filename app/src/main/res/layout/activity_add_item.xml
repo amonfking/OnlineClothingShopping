@@ -31,6 +31,12 @@
         android:inputType="numberDecimal"/>
 
     <EditText
+        android:id="@+id/etItemImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Image"/>
+
+    <EditText
         android:id="@+id/etItemDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
