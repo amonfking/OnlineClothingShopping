@@ -15,6 +15,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import adapter.ItemsAdapter;
 import modal.Items;
 
 public class DashboardActivity extends AppCompatActivity implements View.OnClickListener {
@@ -33,9 +34,9 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         rvItem = findViewById(R.id.rvItem);
         readFromFile();
 
-//        ItemAdapter itemsAdapter = new ItemAdapter(this, contactList);
-//        rvContact.setAdapter(itemsAdapter);
-//        rvContact.setLayoutManager(new GridLayoutManager(this, 2));
+        ItemsAdapter itemsAdapter = new ItemsAdapter(this, itemsList);
+        rvItem.setAdapter(itemsAdapter);
+        rvItem.setLayoutManager(new GridLayoutManager(this, 2));
 
         btnAddItem.setOnClickListener(this);
     }
@@ -55,7 +56,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
             while ((line = br.readLine()) != null){
                 String[] parts = line.split("->");
-                itemsList.add(new Items(parts[0], parts[1], parts[2], R.drawable.ic_launcher_background));
+                itemsList.add(new Items(parts[0], parts[1], parts[3], this.getResources().getIdentifier(parts[2], "drawable", this.getPackageName())));
             }
         }
         catch (IOException e){
