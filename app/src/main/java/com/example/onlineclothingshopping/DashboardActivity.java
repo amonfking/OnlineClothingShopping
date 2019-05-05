@@ -1,5 +1,6 @@
 package com.example.onlineclothingshopping;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -28,17 +29,21 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        btnAddItem = findViewById(R.id.btnAddItem);
         rvItem = findViewById(R.id.rvItem);
         readFromFile();
 
 //        ItemAdapter itemsAdapter = new ItemAdapter(this, contactList);
 //        rvContact.setAdapter(itemsAdapter);
 //        rvContact.setLayoutManager(new GridLayoutManager(this, 2));
+
+        btnAddItem.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-
+        Intent intent = new Intent(DashboardActivity.this, AddItemActivity.class);
+        startActivity(intent);
     }
 
     private void readFromFile(){

@@ -1,5 +1,6 @@
 package com.example.onlineclothingshopping;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -42,9 +43,12 @@ public class AddItemActivity extends AppCompatActivity implements View.OnClickLi
             printstream.println(etItemName.getText().toString() +"->"+etItemPrice.getText().toString()+"->"+etItemImage.getText().toString()+"->"+etItemDescription.getText().toString());
             Toast.makeText(this, "Saved to "+getFilesDir(), Toast.LENGTH_LONG).show();
             printstream.close();
+
+            Intent intent = new Intent(AddItemActivity.this, DashboardActivity.class);
+            startActivity(intent);
         }
         catch (IOException e){
-
+            Toast.makeText(this, "Item failed to save", Toast.LENGTH_LONG).show();
         }
     }
 
