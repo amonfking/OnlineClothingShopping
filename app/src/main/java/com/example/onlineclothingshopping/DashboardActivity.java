@@ -2,6 +2,7 @@ package com.example.onlineclothingshopping;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +14,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import adapter.ItemAdapter;
 import modal.Items;
 
 public class DashboardActivity extends AppCompatActivity implements View.OnClickListener {
@@ -29,6 +31,10 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
         rvItem = findViewById(R.id.rvItem);
         readFromFile();
+
+//        ItemAdapter itemsAdapter = new ItemAdapter(this, contactList);
+//        rvContact.setAdapter(itemsAdapter);
+//        rvContact.setLayoutManager(new GridLayoutManager(this, 2));
     }
 
     @Override

@@ -53,7 +53,7 @@ public class loginFragment extends Fragment implements View.OnClickListener{
     }
 
     public void login(){
-        SharedPreferences sharedPreference = this.getActivity().getSharedPreferences("user", MODE_PRIVATE);
+        SharedPreferences sharedPreference = getActivity().getSharedPreferences("User", MODE_PRIVATE);
         String email = sharedPreference.getString("email","");
         String password = sharedPreference.getString("password","");
 
@@ -70,12 +70,12 @@ public class loginFragment extends Fragment implements View.OnClickListener{
     public boolean validation(){
         boolean flag = true;
         if (TextUtils.isEmpty(etLoginEmail.getText().toString())){
-            etLoginEmail.setError("Please enter Username");
+            etLoginEmail.setError("Please enter email");
             etLoginEmail.requestFocus();
             flag = false;
         }
         else if (TextUtils.isEmpty(etLoginPassword.getText().toString())){
-            etLoginPassword.setError("Please enter Password");
+            etLoginPassword.setError("Please enter password");
             etLoginPassword.requestFocus();
             flag = false;
         }
