@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/imgProfile"
+        android:layout_below="@+id/imgProfile"
         android:textSize="20sp"
         android:hint="Name"
         android:id="@+id/tvName"/>
@@ -24,9 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
         android:layout_below="@+id/tvName"
-        android:layout_toRightOf="@+id/imgProfile"
         android:textSize="20sp"
         android:hint="contact"
         android:id="@+id/tvContact"/>
