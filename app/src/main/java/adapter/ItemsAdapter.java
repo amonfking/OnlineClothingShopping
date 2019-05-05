@@ -32,6 +32,8 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ItemsViewHol
 
     @Override
     public void onBindViewHolder(@NonNull ItemsAdapter.ItemsViewHolder itemsViewHolder, int i) {
+        final Items item = itemLists.get(i);
+
 
     }
 
