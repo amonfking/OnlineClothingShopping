@@ -14,7 +14,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import adapter.ItemAdapter;
 import modal.Items;
 
 public class DashboardActivity extends AppCompatActivity implements View.OnClickListener {
