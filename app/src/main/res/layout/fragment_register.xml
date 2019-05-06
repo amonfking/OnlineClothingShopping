@@ -18,13 +18,6 @@
             android:layout_marginBottom="10dp">
 
 
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="222dp"
-                android:layout_height="217dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/logo" />
 
             <TextView
                 android:id="@+id/register"
@@ -34,12 +27,12 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="30dp"
                 android:text="Register"
-                android:textColor="#FF09496D"
+                android:textColor="#ff5733"
                 android:textSize="30dp" />
 
             <EditText
                 android:id="@+id/etRegisterName"
-                android:layout_width="299dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/register"
                 android:layout_centerHorizontal="true"
@@ -48,7 +41,7 @@
 
             <EditText
                 android:id="@+id/etRegisterEmail"
-                android:layout_width="299dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/etRegisterName"
                 android:layout_centerHorizontal="true"
@@ -57,7 +50,7 @@
 
             <EditText
                 android:id="@+id/etRegisterPassword"
-                android:layout_width="299dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/etRegisterEmail"
                 android:layout_centerHorizontal="true"
@@ -67,7 +60,7 @@
 
             <EditText
                 android:id="@+id/etRegisterConfirmPassword"
-                android:layout_width="299dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/etRegisterPassword"
                 android:layout_centerHorizontal="true"
@@ -82,9 +75,8 @@
                 android:layout_below="@+id/etRegisterConfirmPassword"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:background="#09496D"
                 android:text="Register"
-                android:textColor="#D4DDE8" />
+                android:textColor="#ff5733" />
 
         </RelativeLayout>
     </ScrollView>
